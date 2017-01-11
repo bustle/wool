@@ -4,7 +4,6 @@
   "description": "A utility for building AWS Lambda functions",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha",
     "lint": "standard",
     "pub": "np"
   },
