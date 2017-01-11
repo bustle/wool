@@ -1,6 +1,6 @@
 {
-  "name": "wool",
-  "version": "0.1.0",
+  "name": "wooljs",
+  "version": "0.0.0",
   "description": "A utility for building AWS Lambda functions",
   "main": "lib/index.js",
   "scripts": {
@@ -29,13 +29,10 @@
     "url": "https://github.com/bustlelabs/wool/issues"
   },
   "homepage": "https://github.com/bustlelabs/wool",
-  "dependencies": {
-    "bluebird": "^3.4.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-env": "^1.1.8",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
     "mocha": "^3.2.0",
@@ -45,7 +42,18 @@
   },
   "babel": {
     "presets": [
-      "es2015-node4"
+      [
+        "env",
+        "stage-0",
+        {
+          "targets": {
+            "node": 4.3
+          },
+          "exclude": [
+            "transform-regenerator"
+          ]
+        }
+      ]
     ],
     "plugins": [
       "add-module-exports"
