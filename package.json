@@ -35,7 +35,6 @@
     "babel-preset-env": "^1.1.8",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
-    "mocha": "^3.2.0",
     "np": "^2.10.1",
     "shep-logger": "^4.0.2",
     "standard": "^8.5.0"
