@@ -30,13 +30,15 @@
     "url": "https://github.com/bustlelabs/wool/issues"
   },
   "homepage": "https://github.com/bustlelabs/wool",
+  "dependencies": {
+    "shep-logger": "^4.0.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-env": "^1.1.8",
     "babel-register": "^6.11.6",
     "np": "^2.10.1",
-    "shep-logger": "^4.0.2",
     "standard": "^8.5.0"
   },
   "babel": {
