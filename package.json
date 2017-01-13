@@ -1,6 +1,6 @@
 {
   "name": "wooljs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A utility for building AWS Lambda functions",
   "main": "dist/index.js",
   "scripts": {
