@@ -4,7 +4,9 @@
   "description": "A utility for building AWS Lambda functions",
   "main": "lib/index.js",
   "scripts": {
+    "compile": "babel -d dist/ lib/",
     "lint": "standard",
+    "prepublish": "npm run compile",
     "pub": "np"
   },
   "engines": {
