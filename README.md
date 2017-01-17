@@ -71,7 +71,9 @@ export const handler = asyncHandler(
 
 The benefit of the `asyncHandler` is to remove the overhead of managing callbacks, promise chains and the context object in a typical AWS Lambda handler function. Simply write the code you need the function to execute, declare its return value, and move on with your life.
 
-### Exception handling _alpha_
+The `asyncHandler` function wrapper will also log every event sent through your handler.
+
+### Exception handling *alpha*
 
 Exception handling is the next feature being added to Wool. Currently, Wool will throw an exception and add the message to `log.error()`. The next iteration of exception handling in Wool will include error reporting via third party integrations, like Airbrake.
 
