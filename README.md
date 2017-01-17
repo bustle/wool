@@ -89,3 +89,5 @@ Pull requests welcome!
 Compile: `npm run compile`
 
 Publish: `npm run pub` "publish" is reserved by npm
+
+Linter: We use `standard` to lint our projects. Travis will run `npm run lint` for PRs and pushes in lieu of tests for now
