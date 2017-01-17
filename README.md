@@ -38,7 +38,6 @@ your-lambda-function.js
 import { log } from 'wooljs'
 
 log.info('wool is cool!')
-
 ```
 
 will log:
