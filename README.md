@@ -27,7 +27,7 @@ It will be helpful to have some existing experience with API gateway and Lambda.
 npm install wooljs
 ```
 
-Wooljs uses async/await functions. You will need to install a babel-preset that enables these functions, like `babel-preset-stage-0` or a later stage.
+Wooljs uses async/await functions. You will need to install a babel-preset that enables these functions, like `babel-preset-stage-3` or a plugin for async/await
 
 ## Features
 
