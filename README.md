@@ -72,11 +72,21 @@ The benefit of the `asyncHandler` is to remove the overhead of managing callback
 
 The `asyncHandler` function wrapper will also log every event sent through your handler.
 
-### Exception handling *coming soon!*
+### Exception handling and notifications
 
-Exception handling is the next feature being added to Wool. Currently, Wool will throw an exception and write the error message with `log.error()`. The next iteration of exception handling in Wool will include error reporting via third party integrations, like Airbrake.
+Currently, Wool will throw an error and write the error message to `stdout` with `log.error()`, and return `callback(error)` from the `asyncHandler`. 
 
-Another upcoming feature is timeout logging and notifications. Lambda functions using Wool will send reports similar to when exceptions are thrown if any function times out.
+#### Airbrake
+
+To add error notifications via airbrake, simply add `AIRBRAKE_PROJECT_KEY` and `AIRBRAKE_PROJECT_ID` to `process.env` and configure your Airbrake settings for that project. Wool will take care of the rest.
+
+More notification integrations coming soon!
+
+### Timeouts
+
+AWS Lambda does not have the best logging when it comes to timeouts. Your functions will fail after your configured timeout setting, but lambda does not log any recent stack trace or helpful error.
+
+*Coming soon!* Wool wraps Lambda's default timeout handling and throws an exception with a helpful stack trace and Wool's normal exception logging/notification.
 
 ## Why the name 'wool'?
 
