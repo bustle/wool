@@ -82,10 +82,6 @@ To add error notifications via airbrake, simply add `AIRBRAKE_PROJECT_KEY` and `
 
 The Airbrake node package needs `__dirname: true` if you are using webpack.
 
-#### Sentry
-
-To add error notifications with Sentry, simply add the DSN found at `https://sentry.io/<organization>/<project>/settings/keys/` to process.env as `SENTRY_DSN` and configure your settings for that project in the Sentry web UI.
-
 ### Timeouts
 
 AWS Lambda does not have the best logging when it comes to timeouts. Your functions will fail after your configured timeout setting, but lambda does not log any recent stack trace or helpful error.
