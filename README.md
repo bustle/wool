@@ -86,7 +86,7 @@ The Airbrake node package needs `__dirname: true` if you are using webpack.
 
 AWS Lambda does not have the best logging when it comes to timeouts. Your functions will fail after your configured timeout setting, but lambda does not log any recent stack trace or helpful error.
 
-*Coming soon!* Wool wraps Lambda's default timeout handling and throws an exception with a helpful stack trace and Wool's normal exception logging/notification.
+Wool wraps Lambda's default timeout handling and throws an exception with a helpful stack trace and Wool's normal exception logging/notification. This will throw 50ms before your configured timeout duration.
 
 ## Why the name 'wool'?
 
