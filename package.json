@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/bustlelabs/wool",
   "dependencies": {
-    "airbrake": "~1.2.0",
+    "airbrake": "~2.0.1",
     "shep-logger": "^4.0.2"
   },
   "devDependencies": {
